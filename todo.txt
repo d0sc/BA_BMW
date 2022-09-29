@@ -1,0 +1,38 @@
+File-structure:
+//final
+data/hri/all_stacked_MAX.csv ----> mit max() gestackte s3 files NUR HRI
+
+having_a_look_without_nan
+
+
+
+
+
+Code Strukturieren 
+
+#### Datengrundlage ####
+[A] preprocessing mit min, max, mean 
+[B] create heatmap
+[C] Datengrundlage CSV festlegen und unverändert abspeichern!!! FESTSETZEN 
+[D] Auswahl der Paramteter für die Validierung auf Basis der Korrelationsalanye 
+=> Basis muss stehen, bevor alles weitere passieren kann
+
+--------------
+#### Validierung ML #### --> unabh. von allem anderen machbar, da nur auf Baus der Datengrundlage 
+[A] ML Modell trainieren -> start mit lineare Regression
+    [1] training-preprocessing 
+    [2] cross validation?
+    [3] Training wiederholt aablaufen lassen und Ergebnisse abspeichern? 
+        -> cancel out random errors / random deviations
+[B] Grafiken zu den Triningsergebnissen erstellen
+
+--------------
+#### Optimierungsproblem validieren ####
+[A] PSO wie in der Literatur beschrieben implementieren 
+[B] PSO mit einigen Testergebnissen veriifizieren, dass es richtig implementiert wurde 
+    -> ergebnisse von anderen (leichen) Optimierungsproblemen nachbauen und verifiziren
+[C] PSO, als funktion in das bestehende Optimierungsproblem einbauen!
+[D] main.py schreiben, sodass nur noch diese Funktion verwendet werden muss, um das probkem zu starten
+
+--------------
+#### Verteilungen nach ML validieren
