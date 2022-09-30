@@ -1,11 +1,9 @@
-## How to start 
-command line
+## Structure of the code 
 
-pyhon3 main.py
+(1) preprocessing.py 
+    -> Daten aus s3 holen, eol-query verarbeiten und mapper-Excel nutzen um finales Dataset zu erzeugen
 
+(2) optimizer.py
+    -> executable für die Optimierung
 
-## How is the procedure in the programm
-
-(1) get Data from Datasource with preprocessing.py
-
-(2) Korrelationsalalyse 
+    
